@@ -1,17 +1,13 @@
 /* Font import */
 @font-face {
     font-family: 'Fredoka';
-    src: url('fonts/Fredoka-Regular.woff2') format('woff2'),
-         url('fonts/Fredoka-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('fonts/Fredoka-VariableFont_wdth,wght.ttf') format('truetype'),
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Fredoka';
-    src: url('fonts/Fredoka-Bold.woff2') format('woff2'),
-         url('fonts/Fredoka-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Work Sans';
+    src: url('ffonts/WorkSans-VariableFont_wght.ttf') format('truetype'),
     font-style: normal;
 }
 
