@@ -2,22 +2,11 @@
 @font-face {
     font-family: 'Fredoka';
     src: url('fonts/Fredoka-VariableFont_wdth,wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'Work Sans';
-    src: url('fonts/WorkSans-VariableFont_wght') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Work Sans';
-    src: url('fonts/WorkSans-VariableFont_wght') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    src: url('fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Global Styles */
@@ -39,21 +28,10 @@ body {
     text-align: center;
 }
 
-/* Logo styling */
-.logo {
-    position: absolute;
-    top: 20px;
-    left: 30px; /* Closer to center, but not too far left */
-}
-
-.logo img {
-    width: 100px; /* Adjust the logo size slightly */
-}
-
 /* Main Container */
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -64,12 +42,21 @@ body {
 .center-content {
     text-align: center;
     max-width: 600px;
-    margin-left: 50px; /* Push text slightly away from the logo */
 }
 
+/* Logo styling */
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 250px; /* Adjust the logo size */
+}
+
+/* "RUGELUCKY" heading */
 .center-content h1 {
     font-family: 'Fredoka', sans-serif;
-    font-size: 3em;
+    font-size: 5em; /* Increase font size for "RUGELUCKY" */
     font-weight: bold;
     margin-bottom: 10px;
     color: white;
@@ -104,11 +91,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px; /* Bring cookie closer to center */
 }
 
 .cookie-img {
-    width: 350px; /* Increase cookie size */
+    width: 700px; /* Keep the cookie size large */
     height: auto;
     border-radius: 50%; /* Make the image round */
 }
@@ -122,18 +108,18 @@ body {
     }
 
     .center-content h1 {
-        font-size: 2.5em;
+        font-size: 4em; /* Slightly smaller for mobile */
     }
 
     .cookie-img {
-        width: 200px;
+        width: 400px;
     }
 }
 
 /* Very Small Screens (e.g., phones under 400px width) */
 @media (max-width: 400px) {
     .center-content h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .subtext {
